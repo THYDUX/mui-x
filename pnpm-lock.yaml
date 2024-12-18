@@ -94,7 +94,7 @@ importers:
         version: 5.15.20(@emotion/react@11.11.4(@types/react@18.2.60)(react@18.2.0))(@emotion/styled@11.11.5(@emotion/react@11.11.4(@types/react@18.2.60)(react@18.2.0))(@types/react@18.2.60)(react@18.2.0))(@types/react@18.2.60)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       '@mui/monorepo':
         specifier: github:mui/material-ui#22c5206a9e8191b2f81131d6978a0958e55b7032
-        version: https://codeload.github.com/mui/material-ui/tar.gz/22c5206a9e8191b2f81131d6978a0958e55b7032(@opentelemetry/api@1.8.0)(encoding@0.1.13)
+        version: git+https://git@github.com:mui/material-ui.git#22c5206a9e8191b2f81131d6978a0958e55b7032(@opentelemetry/api@1.8.0)(encoding@0.1.13)
       '@mui/utils':
         specifier: ^5.15.20
         version: 5.15.20(@types/react@18.2.60)(react@18.2.0)
@@ -2858,8 +2858,8 @@ packages:
       '@types/react':
         optional: true
 
-  '@mui/monorepo@https://codeload.github.com/mui/material-ui/tar.gz/22c5206a9e8191b2f81131d6978a0958e55b7032':
-    resolution: {tarball: https://codeload.github.com/mui/material-ui/tar.gz/22c5206a9e8191b2f81131d6978a0958e55b7032}
+  '@mui/monorepo@git+https://git@github.com:mui/material-ui.git#22c5206a9e8191b2f81131d6978a0958e55b7032':
+    resolution: {commit: 22c5206a9e8191b2f81131d6978a0958e55b7032, repo: git@github.com:mui/material-ui.git, type: git}
     version: 6.0.0-alpha.11
     engines: {pnpm: 9.2.0}
 
@@ -5590,6 +5590,7 @@ packages:
   eslint@8.57.0:
     resolution: {integrity: sha512-dZ6+mexnaTIbSBZWgou51U6OmzIhYM2VcNdtiTtI7qPNZm35Akpr0f6vtw3w1Kmn5PYo+tZVfh13WrhpS6oLqQ==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+    deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
     hasBin: true
 
   espree@9.6.1:
@@ -11576,7 +11577,7 @@ snapshots:
       '@emotion/styled': 11.11.5(@emotion/react@11.11.4(@types/react@18.2.60)(react@18.2.0))(@types/react@18.2.60)(react@18.2.0)
       '@types/react': 18.2.60
 
-  '@mui/monorepo@https://codeload.github.com/mui/material-ui/tar.gz/22c5206a9e8191b2f81131d6978a0958e55b7032(@opentelemetry/api@1.8.0)(encoding@0.1.13)':
+  '@mui/monorepo@git+https://git@github.com:mui/material-ui.git#22c5206a9e8191b2f81131d6978a0958e55b7032(@opentelemetry/api@1.8.0)(encoding@0.1.13)':
     dependencies:
       '@googleapis/sheets': 7.0.1(encoding@0.1.13)
       '@netlify/functions': 2.7.0(@opentelemetry/api@1.8.0)
